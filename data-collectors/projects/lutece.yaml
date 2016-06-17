@@ -1,0 +1,5 @@
+sonar:
+    url: http://dev.lutece.paris.fr/sonar/api/resources
+    key: 'fr.paris.lutece:lutece-core'
+openhub:
+    

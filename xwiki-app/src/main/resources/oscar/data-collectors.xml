@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xwikidoc>
+<web>oscar</web>
+<name>data-collectors</name>
+<language></language>
+<defaultLanguage>en</defaultLanguage>
+<translation>0</translation>
+<parent>riscoss.WebHome</parent>
+<creator>xwiki:XWiki.sl</creator>
+<author>xwiki:XWiki.sl</author>
+<customClass></customClass>
+<contentAuthor>xwiki:XWiki.sl</contentAuthor>
+<creationDate>1443164833000</creationDate>
+<date>1456395178000</date>
+<contentUpdateDate>1456393840000</contentUpdateDate>
+<version>26.1</version>
+<title>Data Collectors</title>
+<defaultTemplate></defaultTemplate>
+<validationScript></validationScript>
+<comment></comment>
+<minorEdit>false</minorEdit>
+<syntaxId>xwiki/2.1</syntaxId>
+<hidden>false</hidden>
+<content>{{box}}
+The data collectors below extract development activity from tools such as versioning control systems, bug trackers, static analysers, mailing-lists. The collected data is then made available to the OW2 risk analysis platform, which was created in the frame of the [[RISCOSS EU project&gt;&gt;riscoss.about]]. This platform hinges on [[risk models&gt;&gt;oscar.risk-models]] which normalize the collected data and turn it into high-level risk indicators. These indicators are then displayed on each OW2 mature project's dashboard. Each project's collected data is displayed in the "Risk Drivers" tab of each project's dashboard in order to make the entire process completely transparent. 
+
+
+The collectors are implemented in JavaScript, either as API clients (such as the SonarQube data collector), or as scrapers (such as the Fossology one). They are executed in a NodeJS environment.
+{{/box}}
+
+{{velocity}}
+#set($xOptions = {"type":"oscar.DataCollector", "overview": "description", "author": "true", "exclude": "oscar.DataCollectorTemplate"})
+{{include reference="oscar.XTable" /}}
+#set($cOptions = {"template":"oscar.DataCollectorTemplate", "space":"oscar", "parent": "oscar.data-collectors", "hint": "New data collector"})
+{{include reference="oscar.CreateForm" /}}
+{{/velocity}}</content></xwikidoc>

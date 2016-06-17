@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+<infos/>
+<name>oscar-scorecard-0.1</name>
+<description></description>
+<licence>MIT</licence>
+<author>OW2</author>
+<version>0.1</version>
+<backupPack>false</backupPack>
+<preserveVersion>false</preserveVersion><files>
+<file defaultAction="0" language="">oscar.OmmSheet</file>
+<file defaultAction="0" language="">oscar.DataCollectorTemplate</file>
+<file defaultAction="0" language="">oscar.risk-models</file>
+<file defaultAction="0" language="">oscar.D3Chart</file>
+<file defaultAction="0" language="">oscar.ProjectSheet</file>
+<file defaultAction="0" language="">oscar.data-collectors</file>
+<file defaultAction="0" language="">oscar.CreateForm</file>
+<file defaultAction="0" language="">oscar.oscar-risk-model</file>
+<file defaultAction="0" language="">oscar.DataCollector</file>
+<file defaultAction="0" language="">oscar.quality-sensitive-risk-model</file>
+<file defaultAction="0" language="">oscar.WebHome</file>
+<file defaultAction="0" language="">oscar.RiskModelTemplate</file>
+<file defaultAction="0" language="">oscar.jira-data-collector</file>
+<file defaultAction="0" language="">oscar.API</file>
+<file defaultAction="0" language="">oscar.open-hub-data-collector</file>
+<file defaultAction="0" language="">oscar.ScorecardApp</file>
+<file defaultAction="0" language="">oscar.D3Chart-1</file>
+<file defaultAction="0" language="">oscar.DataD3</file>
+<file defaultAction="0" language="">oscar.DashboardAppAssets</file>
+<file defaultAction="0" language="">oscar.activeness-risk-model</file>
+<file defaultAction="0" language="">oscar.sonarqube-data-collector</file>
+<file defaultAction="0" language="">oscar.XTable</file>
+<file defaultAction="0" language="">oscar.fossology-data-collector</file>
+<file defaultAction="0" language="">oscar.Activity</file>
+<file defaultAction="0" language="">oscar.RiskModelSheet</file>
+<file defaultAction="0" language="">oscar.RiskModel</file>
+<file defaultAction="0" language="">oscar.JavaScriptExtension</file>
+<file defaultAction="0" language="">oscar.CreateButton</file>
+<file defaultAction="0" language="">oscar.Omm</file>
+<file defaultAction="0" language="">oscar.DataCollectorSheet</file>
+<file defaultAction="0" language="">oscar.Utils</file>
+<file defaultAction="0" language="">oscar.license-sensitive-risk-model</file>
+<file defaultAction="0" language="">oscar.OMM</file>
+<file defaultAction="0" language="">oscar.Project</file>
+<file defaultAction="0" language="">oscar.Stylesheet</file>
+</files></package>

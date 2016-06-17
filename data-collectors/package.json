@@ -1,0 +1,11 @@
+{
+  "name": "oscar-data-collectors",
+  "version": "0.0.1",
+  "dependencies": {
+    "js-yaml": "^3.6.1",
+    "pixl-xml": "^1.0.7",
+    "request": "*",
+    "scraperjs": "*",
+    "underscore": "^1.8.3"
+  }
+}

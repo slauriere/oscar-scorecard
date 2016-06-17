@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xwikidoc>
+<web>oscar</web>
+<name>D3Chart-1</name>
+<language></language>
+<defaultLanguage>en</defaultLanguage>
+<translation>0</translation>
+<parent></parent>
+<creator>xwiki:XWiki.sl</creator>
+<author>xwiki:XWiki.sl</author>
+<customClass></customClass>
+<contentAuthor>xwiki:XWiki.sl</contentAuthor>
+<creationDate>1443374045000</creationDate>
+<date>1443374149000</date>
+<contentUpdateDate>1443374149000</contentUpdateDate>
+<version>1.1</version>
+<title>D3 Chart Example 1</title>
+<defaultTemplate></defaultTemplate>
+<validationScript></validationScript>
+<comment>Copied from projects:oqam.d3-chart-1</comment>
+<minorEdit>false</minorEdit>
+<syntaxId>xwiki/2.1</syntaxId>
+<hidden>false</hidden>
+<content>{{velocity}}
+$!xwiki.jsx.use("Macros.d3js", {"minify":false})
+{{html clean="false"}}
+&lt;style&gt;
+  .chart div {
+    font: 10px sans-serif;
+    background-color: steelblue;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+    color: white;
+  }
+
+  .chart text.name {
+    fill: blue;
+  }
+
+  .chart {
+    background: #b0e0f8;
+    margin: 5px;
+  }
+
+  .chart rect {
+    stroke: white;
+    fill: steelblue;
+  }
+
+  .chart text {
+    fill: white;
+  }
+
+  .chart text.name {
+    fill: #000;
+  }
+
+  .chart line {
+    stroke: #c1c1c1;
+  }
+
+  .chart .rule {
+    fill: #000;
+  }
+  /* removed the while stroke as we don't need it anymore */
+
+  .chart rect {
+    stroke: none;
+  }
+  /* a bit of hovering effect for each bar */
+
+  .chart rect:hover {
+    fill: #64707D;
+  }
+
+&lt;/style&gt;
+&lt;div class="chart"&gt;&lt;/div&gt;
+&lt;script&gt;
+document.observe('d3:loaded', function(){
+  var names = ['John', 'Tim', 'Sam', 'Greg', 'Charles'],
+    hotdogs = [8, 4, 9, 12, 11],
+    chart,
+    width = 400,
+    bar_height = 30,
+    height = bar_height * names.length;
+
+  var left_width = 100;
+  var x, y;
+
+
+  x = d3.scale.linear()
+    .domain([0, d3.max(hotdogs)])
+    .range([0, width]);
+
+  var gap = 2;
+  // redefine y for adjusting the gap
+  y = d3.scale.ordinal()
+    .domain(hotdogs)
+    .rangeBands([0, (bar_height + 2 * gap) * names.length]);
+
+  chart = d3.select('.chart')
+    .append('svg')
+    .attr('class', 'chart')
+    .attr('width', left_width + width + 40)
+    .attr('height', (bar_height + gap * 2) * names.length + 30)
+    .append("g")
+    .attr("transform", "translate(10, 20)");
+
+  chart.selectAll("line")
+    .data(x.ticks(d3.max(hotdogs)))
+    .enter().append("line")
+    .attr("x1", function(d) {
+      return x(d) + left_width;
+    })
+    .attr("x2", function(d) {
+      return x(d) + left_width;
+    })
+    .attr("y1", 0)
+    .attr("y2", (bar_height + gap * 2) * names.length);
+
+  chart.selectAll(".rule")
+    .data(x.ticks(d3.max(hotdogs)))
+    .enter().append("text")
+    .attr("class", "rule")
+    .attr("x", function(d) {
+      return x(d) + left_width;
+    })
+    .attr("y", 0)
+    .attr("dy", -6)
+    .attr("text-anchor", "middle")
+    .attr("font-size", 10)
+    .text(String);
+
+  chart.selectAll("rect")
+    .data(hotdogs)
+    .enter().append("rect")
+    .attr("x", left_width)
+    .attr("y", function(d) {
+      return y(d) + gap;
+    })
+    .attr("width", x)
+    .attr("height", bar_height);
+
+  chart.selectAll("text.score")
+    .data(hotdogs)
+    .enter().append("text")
+    .attr("x", function(d) {
+      return x(d) + left_width;
+    })
+    .attr("y", function(d, i) {
+      return y(d) + y.rangeBand() / 2;
+    })
+    .attr("dx", -5)
+    .attr("dy", ".36em")
+    .attr("text-anchor", "end")
+    .attr('class', 'score')
+    .text(String);
+
+  chart.selectAll("text.name")
+    .data(names)
+    .enter().append("text")
+    .attr("x", left_width / 2)
+    .attr("y", function(d, i) {
+      return y(hotdogs[i]) + y.rangeBand() / 2;
+    })
+    .attr("dy", ".36em")
+    .attr("text-anchor", "middle")
+    .attr('class', 'name')
+    .text(String);
+
+});
+&lt;/script&gt;
+{{/html}}
+{{/velocity}}</content></xwikidoc>

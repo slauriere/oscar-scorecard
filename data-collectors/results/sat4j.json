@@ -1,0 +1,287 @@
+{
+  "openhub": {
+    "activity": "2",
+    "one-year-contributor-count": "4"
+  },
+  "fossology": {
+    "licenses": [
+      {
+        "name": "LGPL-2.1+",
+        "count": "200",
+        "concluded": "0"
+      },
+      {
+        "name": "EPL-1.0",
+        "count": "200",
+        "concluded": "0"
+      },
+      {
+        "name": "Dual-license",
+        "count": "199",
+        "concluded": "0"
+      },
+      {
+        "name": "No_license_found",
+        "count": "22",
+        "concluded": "0"
+      },
+      {
+        "name": "MIT",
+        "count": "7",
+        "concluded": "0"
+      },
+      {
+        "name": "MIT-style",
+        "count": "1",
+        "concluded": "0"
+      }
+    ],
+    "noLicenseCount": "22",
+    "fileCount": "222"
+  },
+  "sonar": {
+    "id": 15035,
+    "key": "org.ow2.sat4j:org.ow2.sat4j.pom",
+    "name": "SAT4J",
+    "scope": "PRJ",
+    "qualifier": "TRK",
+    "date": "2016-05-01T22:07:59+0200",
+    "creationDate": "2014-07-24T18:23:35+0200",
+    "lname": "SAT4J",
+    "version": "2.3.6-SNAPSHOT",
+    "description": "The aim of the SAT4J library is to provide an efficient library of SAT solvers in Java. Compared to the OpenSAT project, the SAT4J library targets first users of SAT \"black boxes\", willing to embed  SAT technologies into their application without worrying about the details. Since we use the library for our own research, it is also possible for SAT researchers to use it as a basis for their work.",
+    "metrics": {
+      "lines": {
+        "val": 76973,
+        "frmt_val": "76,973"
+      },
+      "ncloc": {
+        "val": 42504,
+        "frmt_val": "42,504"
+      },
+      "classes": {
+        "val": 488,
+        "frmt_val": "488"
+      },
+      "files": {
+        "val": 508,
+        "frmt_val": "508"
+      },
+      "directories": {
+        "val": 49,
+        "frmt_val": "49"
+      },
+      "functions": {
+        "val": 4969,
+        "frmt_val": "4,969"
+      },
+      "accessors": {
+        "val": 159,
+        "frmt_val": "159"
+      },
+      "statements": {
+        "val": 18484,
+        "frmt_val": "18,484"
+      },
+      "public_api": {
+        "val": 4367,
+        "frmt_val": "4,367"
+      },
+      "comment_lines": {
+        "val": 7807,
+        "frmt_val": "7,807"
+      },
+      "comment_lines_density": {
+        "val": 15.5,
+        "frmt_val": "15.5%"
+      },
+      "public_documented_api_density": {
+        "val": 27.1,
+        "frmt_val": "27.1%"
+      },
+      "public_undocumented_api": {
+        "val": 3184,
+        "frmt_val": "3,184"
+      },
+      "complexity": {
+        "val": 9745,
+        "frmt_val": "9,745"
+      },
+      "class_complexity": {
+        "val": 20,
+        "frmt_val": "20.0"
+      },
+      "function_complexity": {
+        "val": 1.9,
+        "frmt_val": "1.9"
+      },
+      "file_complexity": {
+        "val": 19.2,
+        "frmt_val": "19.2"
+      },
+      "function_complexity_distribution": {
+        "data": "1=2772;2=996;4=296;6=152;8=67;10=42;12=70"
+      },
+      "file_complexity_distribution": {
+        "data": "0=188;5=90;10=86;20=49;30=55;60=21;90=19"
+      },
+      "tests": {
+        "val": 2163,
+        "frmt_val": "2,163"
+      },
+      "test_execution_time": {
+        "val": 578414,
+        "frmt_val": "9:38 min"
+      },
+      "test_errors": {
+        "val": 0,
+        "frmt_val": "0"
+      },
+      "skipped_tests": {
+        "val": 0,
+        "frmt_val": "0"
+      },
+      "test_failures": {
+        "val": 0,
+        "frmt_val": "0"
+      },
+      "test_success_density": {
+        "val": 100,
+        "frmt_val": "100.0%"
+      },
+      "coverage": {
+        "val": 46.2,
+        "frmt_val": "46.2%"
+      },
+      "lines_to_cover": {
+        "val": 18758,
+        "frmt_val": "18,758"
+      },
+      "uncovered_lines": {
+        "val": 9935,
+        "frmt_val": "9,935"
+      },
+      "line_coverage": {
+        "val": 47,
+        "frmt_val": "47.0%"
+      },
+      "conditions_to_cover": {
+        "val": 8663,
+        "frmt_val": "8,663"
+      },
+      "uncovered_conditions": {
+        "val": 4816,
+        "frmt_val": "4,816"
+      },
+      "branch_coverage": {
+        "val": 44.4,
+        "frmt_val": "44.4%"
+      },
+      "duplicated_lines": {
+        "val": 5472,
+        "frmt_val": "5,472"
+      },
+      "duplicated_blocks": {
+        "val": 254,
+        "frmt_val": "254"
+      },
+      "duplicated_files": {
+        "val": 80,
+        "frmt_val": "80"
+      },
+      "duplicated_lines_density": {
+        "val": 7.1,
+        "frmt_val": "7.1%"
+      },
+      "violations": {
+        "val": 61,
+        "frmt_val": "61"
+      },
+      "blocker_violations": {
+        "val": 0,
+        "frmt_val": "0"
+      },
+      "critical_violations": {
+        "val": 0,
+        "frmt_val": "0"
+      },
+      "major_violations": {
+        "val": 27,
+        "frmt_val": "27"
+      },
+      "minor_violations": {
+        "val": 0,
+        "frmt_val": "0"
+      },
+      "info_violations": {
+        "val": 34,
+        "frmt_val": "34"
+      },
+      "dsm": {
+        "data": "[{\"i\":15039,\"n\":\"SAT4J sat\",\"q\":\"BRC\",\"v\":[{},{},{},{},{},{},{}]},{\"i\":15040,\"n\":\"SAT4J csp\",\"q\":\"BRC\",\"v\":[{},{},{},{},{},{},{}]},{\"i\":15041,\"n\":\"SAT4J csp xml parser\",\"q\":\"BRC\",\"v\":[{},{\"i\":null,\"w\":1},{},{},{},{},{}]},{\"i\":15042,\"n\":\"SAT4J scala api\",\"q\":\"BRC\",\"v\":[{},{},{},{},{},{},{}]},{\"i\":15038,\"n\":\"SAT4J maxsat\",\"q\":\"BRC\",\"v\":[{\"i\":null,\"w\":1},{},{},{},{},{},{}]},{\"i\":15037,\"n\":\"SAT4J pseudo\",\"q\":\"BRC\",\"v\":[{\"i\":null,\"w\":1},{\"i\":null,\"w\":1},{},{},{\"i\":null,\"w\":1},{},{}]},{\"i\":15036,\"n\":\"SAT4J core\",\"q\":\"BRC\",\"v\":[{\"i\":null,\"w\":1},{},{},{},{\"i\":null,\"w\":1},{\"i\":null,\"w\":1},{}]}]"
+      },
+      "package_cycles": {
+        "val": 20,
+        "frmt_val": "20"
+      },
+      "package_tangle_index": {
+        "val": 5.6,
+        "frmt_val": "5.6%"
+      },
+      "package_tangles": {
+        "val": 33,
+        "frmt_val": "33"
+      },
+      "package_feedback_edges": {
+        "val": 12,
+        "frmt_val": "12"
+      },
+      "package_edges_weight": {
+        "val": 1180,
+        "frmt_val": "1,180"
+      },
+      "quality_profiles": {
+        "data": "[{\"key\":\"java-ow2-91603\",\"language\":\"java\",\"name\":\"OW2\",\"rulesUpdatedAt\":\"2014-10-01T08:45:59+0000\"},{\"key\":\"js-sonar-way-71612\",\"language\":\"js\",\"name\":\"Sonar way\",\"rulesUpdatedAt\":\"2014-10-01T08:45:59+0000\"},{\"key\":\"web-default-web-profile-71927\",\"language\":\"web\",\"name\":\"Default Web Profile\",\"rulesUpdatedAt\":\"2014-07-02T11:24:02+0000\"}]"
+      },
+      "complexity_in_functions": {
+        "val": 9551,
+        "frmt_val": "9,551"
+      },
+      "false_positive_issues": {
+        "val": 0,
+        "frmt_val": "0"
+      },
+      "open_issues": {
+        "val": 61,
+        "frmt_val": "61"
+      },
+      "reopened_issues": {
+        "val": 0,
+        "frmt_val": "0"
+      },
+      "confirmed_issues": {
+        "val": 0,
+        "frmt_val": "0"
+      },
+      "sqale_index": {
+        "val": 2460,
+        "frmt_val": "5d 1h"
+      },
+      "ncloc_language_distribution": {
+        "data": "java=42265;js=82;web=157"
+      },
+      "sqale_rating": {
+        "val": 1,
+        "frmt_val": "A",
+        "data": "A"
+      },
+      "development_cost": {
+        "data": "1275120"
+      },
+      "sqale_debt_ratio": {
+        "val": 0.2,
+        "frmt_val": "0.2%"
+      }
+    }
+  }
+}

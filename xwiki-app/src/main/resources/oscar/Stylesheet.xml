@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xwikidoc version="1.2" reference="oscar.Stylesheet" locale="">
+  <web>oscar</web>
+  <name>Stylesheet</name>
+  <language/>
+  <defaultLanguage>en</defaultLanguage>
+  <translation>0</translation>
+  <creator>XWiki.slauriere</creator>
+  <creationDate>1466022302000</creationDate>
+  <author>XWiki.slauriere</author>
+  <contentAuthor>XWiki.slauriere</contentAuthor>
+  <date>1466022361000</date>
+  <contentUpdateDate>1466022302000</contentUpdateDate>
+  <version>1.4</version>
+  <title/>
+  <comment>Copied from xwiki:oscar.Stylesheet.WebHome</comment>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <content/>
+  <object>
+    <name>oscar.Stylesheet</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>6956a967-79c2-441f-9e98-50598359723f</guid>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <contentType>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>contentType</name>
+        <number>6</number>
+        <prettyName>Content Type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators>|, </separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>CSS|LESS</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </contentType>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage|onDemand|always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>&#xd;
+#project-list {&#xd;
+  background: url($xwiki.getSkinFile("icons/xwiki/spinner.gif")) no-repeat 50% 50%;&#xd;
+  height: 300px;&#xd;
+}&#xd;
+&#xd;
+#entity-list {&#xd;
+  background: url($xwiki.getSkinFile("icons/xwiki/spinner.gif")) no-repeat 50% 50%;&#xd;
+  height: 300px;&#xd;
+}&#xd;
+&#xd;
+.project-summary-table {&#xd;
+    margin-bottom: 2em;&#xd;
+}&#xd;
+&#xd;
+&#xd;
+.project-summary-table td {&#xd;
+    border-bottom: none;&#xd;
+}&#xd;
+&#xd;
+.project-summary-table th {&#xd;
+    border-bottom: none;&#xd;
+}&#xd;
+&#xd;
+table.metrics-table td:last-child {&#xd;
+font-size: 0.9em;&#xd;
+&#xd;
+}&#xd;
+&#xd;
+table {&#xd;
+  margin-bottom: 10px;&#xd;
+}&#xd;
+&#xd;
+.home-table {&#xd;
+  margin-bottom: 0px;&#xd;
+}&#xd;
+&#xd;
+.home-table td {&#xd;
+    border-bottom: none;&#xd;
+    padding-bottom: 0px;&#xd;
+}&#xd;
+&#xd;
+.home-panel th {&#xd;
+  text-align: center;&#xd;
+  border-bottom: none;&#xd;
+  padding-top: 2em;&#xd;
+  font-size: 1.2em;&#xd;
+  text-transform: uppercase;&#xd;
+}&#xd;
+&#xd;
+.home-panel td {&#xd;
+    border-bottom: none;&#xd;
+}&#xd;
+&#xd;
+.home-panel a {&#xd;
+    color: white;&#xd;
+}&#xd;
+.btn-riscoss {&#xd;
+  background-color: #a2c309;&#xd;
+}&#xd;
+&#xd;
+a.btn-riscoss  {&#xd;
+  color: white;&#xd;
+}&#xd;
+&#xd;
+/********* MAIN *********/&#xd;
+div.main {&#xd;
+    /* -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3); */&#xd;
+    box-shadow: none;&#xd;
+&#xd;
+}&#xd;
+/* a {&#xd;
+  color: #2fa32c;&#xd;
+}*/&#xd;
+&#xd;
+#footerglobal {&#xd;
+   display: visible;&#xd;
+}&#xd;
+&#xd;
+select.model-select {&#xd;
+  color: white;&#xd;
+  background-color: #c6c6c6;&#xd;
+  box-shadow: none;&#xd;
+  border: none;&#xd;
+  padding: 3px 20px 3px 10px;&#xd;
+  line-height: 1.5;&#xd;
+}&#xd;
+&#xd;
+.btn-riscoss-dashboard {&#xd;
+   text-align: center;&#xd;
+    margin-top: 0em;&#xd;
+}&#xd;
+.btn-riscoss-dashboard a {&#xd;
+   background-color:#20b2aa;&#xd;
+   color: white;&#xd;
+}&#xd;
+&#xd;
+.btn-riscoss-dashboard a:hover {&#xd;
+   color: white;&#xd;
+}&#xd;
+&#xd;
+.btn-dev-dashboard {&#xd;
+   text-align: center;&#xd;
+}&#xd;
+.btn-dev-dashboard a {&#xd;
+   background-color: gray;&#xd;
+   color: white;&#xd;
+}&#xd;
+&#xd;
+.btn-dev-dashboard a:hover {&#xd;
+   color: white;&#xd;
+}&#xd;
+&#xd;
+.credits {&#xd;
+  text-align: center;&#xd;
+  background-color: #e5e5e5;&#xd;
+  padding: 1em;&#xd;
+}&#xd;
+&#xd;
+.nav-tabs {&#xd;
+  border-bottom: none;&#xd;
+}&#xd;
+&#xd;
+.nav-tabs>li>a {&#xd;
+    border: none;&#xd;
+    margin-right: 0;&#xd;
+    color: #666;&#xd;
+    box-shadow: none;&#xd;
+}&#xd;
+.tab-content {&#xd;
+  padding: 1em;&#xd;
+  border: 1px solid #e6e6e6;&#xd;
+}&#xd;
+&#xd;
+.nav-tabs>li>a {&#xd;
+  border-radius: 0px;&#xd;
+  background-color: #1667a6;&#xd;
+  color: white;&#xd;
+ border: 0px;&#xd;
+ }&#xd;
+&#xd;
+.nav-tabs>li.active>a {&#xd;
+  color: white;&#xd;
+  background-color: #2196f3;&#xd;
+  border: 0px;&#xd;
+}&#xd;
+&#xd;
+.nav-tabs>li.active>a:hover {&#xd;
+  color: white;&#xd;
+  background-color: #2196f3;&#xd;
+  border: 0px;&#xd;
+}&#xd;
+&#xd;
+.nav-tabs>li.active>a:focus {&#xd;
+    color: white;&#xd;
+    background-color: #2196f3;&#xd;
+border: 0px;&#xd;
+}&#xd;
+&#xd;
+.nav>li>a:hover, .nav>li>a:focus, .applicationPanelMoreContainer ul li>span>a:hover {&#xd;
+    text-decoration: none;&#xd;
+    background-color: #2196f3;&#xd;
+}&#xd;
+&#xd;
+&#xd;
+#mainContentArea>.xcontent {&#xd;
+   margin-bottom: 0px;&#xd;
+}&#xd;
+&#xd;
+&#xd;
+blockquote {&#xd;
+  font-size: 1em;&#xd;
+}&#xd;
+&#xd;
+td {&#xd;
+  vertical-align: middle !important;&#xd;
+}&#xd;
+&#xd;
+th span.glyphicon, td span.glyphicon {&#xd;
+  /* color: #FE6600; */&#xd;
+  color: #009DFE;&#xd;
+  margin-left: 0.5em;&#xd;
+}&#xd;
+&#xd;
+.popover {&#xd;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;&#xd;
+  font-size: 12px;&#xd;
+}&#xd;
+&#xd;
+.popover-content {&#xd;
+    padding: 18px 18px;&#xd;
+}&#xd;
+&#xd;
+.popover-content ul {&#xd;
+  padding-left: 20px;&#xd;
+  margin-bottom: inherit;&#xd;
+}&#xd;
+&#xd;
+.glyphicon-info-sign {&#xd;
+  cursor: pointer;&#xd;
+}&#xd;
+&#xd;
+.xdocLastModification {&#xd;
+  display: none;&#xd;
+}&#xd;
+&#xd;
+#xwikicontent .nav-pills>li>a {&#xd;
+  background-color: #efefef;&#xd;
+  padding: 5px 10px;&#xd;
+}&#xd;
+&#xd;
+#xwikicontent .nav-pills>li>a:hover {&#xd;
+  background-color: #c9c9c9;&#xd;
+}&#xd;
+&#xd;
+.nav-pills {&#xd;
+  float: right;&#xd;
+}&#xd;
+&#xd;
+.nav .globalsearch {&#xd;
+  display: none;&#xd;
+}&#xd;
+&#xd;
+.globalsearch .input-group-btn {&#xd;
+    display: none;&#xd;
+}&#xd;
+&#xd;
+.breadcrumb {&#xd;
+  padding-left: 0px;&#xd;
+}&#xd;
+&#xd;
+.box ul {&#xd;
+  margin-top: 0.2em;&#xd;
+  margin-left: 1em;&#xd;
+  margin-right: 5em;&#xd;
+}&#xd;
+&#xd;
+.box li {&#xd;
+  margin-bottom: 0.3em;&#xd;
+}&#xd;
+&#xd;
+&#xd;
+&#xd;
+/** CHART **/&#xd;
+&#xd;
+div.chart {&#xd;
+  background-color: white;&#xd;
+  margin: 0px;&#xd;
+}&#xd;
+&#xd;
+.chart div {&#xd;
+  font: 10px sans-serif;&#xd;
+  background-color: steelblue;&#xd;
+  text-align: right;&#xd;
+  padding: 3px;&#xd;
+  margin: 1px;&#xd;
+  color: white;&#xd;
+}&#xd;
+&#xd;
+.chart text.name {&#xd;
+  fill: blue;&#xd;
+}&#xd;
+&#xd;
+.chart rect {&#xd;
+  stroke: white;&#xd;
+  fill: #009dfe;&#xd;
+}&#xd;
+&#xd;
+.chart text {&#xd;
+  fill: white;&#xd;
+}&#xd;
+&#xd;
+.chart text.name {&#xd;
+  fill: #000;&#xd;
+}&#xd;
+&#xd;
+.chart line {&#xd;
+  stroke: #c1c1c1;&#xd;
+  stroke-width: 0.5;&#xd;
+}&#xd;
+&#xd;
+.chart .rule {&#xd;
+  fill: #000;&#xd;
+}&#xd;
+&#xd;
+.chart rect {&#xd;
+  stroke: none;&#xd;
+}&#xd;
+&#xd;
+.chart rect:hover {&#xd;
+  fill: #64707D;&#xd;
+}&#xd;
+&#xd;
+.chart-legend {&#xd;
+  text-align: center;&#xd;
+  font-style: italic;&#xd;
+  font-size: 1.2em;&#xd;
+  margin: 1em;&#xd;
+}&#xd;
+&#xd;
+/** CHART END **/&#xd;
+&#xd;
+.formContactmeContent, #thanks {&#xd;
+  margin-top: 400px;&#xd;
+}&#xd;
+&#xd;
+&#xd;
+.nav-pills.actions {&#xd;
+  display: none;&#xd;
+}&#xd;
+&#xd;
+h3, .h3 {&#xd;
+    font-size: 1.2em;&#xd;
+}&#xd;
+&#xd;
+h4 {&#xd;
+    font-size: 1em;&#xd;
+    padding-left: 1em;&#xd;
+}&#xd;
+&#xd;
+&#xd;
+h2:first-child {&#xd;
+  margin-top: 0px;&#xd;
+}&#xd;
+</code>
+    </property>
+    <property>
+      <contentType>CSS</contentType>
+    </property>
+    <property>
+      <name>Stylesheet</name>
+    </property>
+    <property>
+      <parse>0</parse>
+    </property>
+    <property>
+      <use>always</use>
+    </property>
+  </object>
+</xwikidoc>

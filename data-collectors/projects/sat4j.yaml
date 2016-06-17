@@ -1,0 +1,6 @@
+key: sat4j
+fossology:
+    upload: 96
+    item: 396972
+sonar: 'org.ow2.sat4j:org.ow2.sat4j.pom'
+openhub: 'org_sat4j'

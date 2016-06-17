@@ -1,0 +1,4 @@
+api:
+  url: https://www.openhub.net/p/
+  key: '685f3379ed8d52150183a2f6cc29d2979b5ec958f982aab30d7e82584fd098a1'
+activityLevels: { "very high": "5", "high": "4", "medium": "3", "low": "2", "very low": "1"}
